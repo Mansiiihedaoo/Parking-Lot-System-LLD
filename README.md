@@ -1,5 +1,5 @@
 <h1>PARKING LOT SYSTEM LLD</h1>
-![Prlkinglot drawio](https://github.com/user-attachments/assets/ac8324c3-ce18-4bb4-963e-825628ca21e4)
+![Prlkinglot](https://github.com/user-attachments/assets/a76e5b49-a990-4076-9630-7708a9042597)
 
 
 ### Components
