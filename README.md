@@ -1,6 +1,5 @@
 <h1>PARKING LOT SYSTEM LLD</h1>
-![Screenshot (96)](https://github.com/user-attachments/assets/96fabcaf-eb16-4161-ab35-d2b811626cbc)
-
+![Meet](https://github.com/user-attachments/assets/73877b1b-bc79-4742-8770-85e70c6cef35)
 
 ### Components
 
