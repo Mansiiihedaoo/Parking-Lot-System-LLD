@@ -1,0 +1,52 @@
+PARKING LOT SYSTEM LLD
+
+### Components
+
+1. **ParkingLot**
+2. **ParkingSpot**
+3. **Vehicle**
+4. **DisplayBoard**
+5. **ParkingTicket**
+6. **PaymentSystem**
+7. **EntranceExit**
+8. **ParkingAgent**
+
+### Class Diagrams and Relationships
+
+1. **ParkingLot:**
+    - Manages parking spots and vehicles.
+    - Tracks current occupancy and full capacity.
+    - Provides methods to add or remove vehicles.
+2. **ParkingSpot:**
+    - Represents different types of parking spots: Handicapped, Compact, Large, Motorcycle.
+    - Maintains status (occupied or available).
+3. **Vehicle:**
+    - Abstract class or interface for different types of vehicles: Car, Truck, Van, Motorcycle.
+    - Holds vehicle details and type.
+4. **DisplayBoard:**
+    - Shows availability of each parking spot type.
+    - Provides updates on parking lot status.
+5. **ParkingTicket:**
+    - Issued upon entry.
+    - Used for calculating fees upon exit.
+6. **PaymentSystem:**
+    - Handles payment processing via automated machine or parking agent.
+    - Supports various payment methods: Credit/Debit cards, Cash.
+7. **EntranceExit:**
+    - Manages entry and exit of vehicles.
+    - Issues tickets and processes exits.
+8. **ParkingAgent:**
+    - Assists with payments and ticket processing at the exit.
+
+- **Aggregation**: `ParkingLot` aggregates `ParkingSpot` objects, which are used to manage parking space.
+- **Association**: `Vehicle` is associated with a `ParkingSpot` and used by `ParkingLot` and `EntranceExit`.
+- **Dependency**: `DisplayBoard` and `PaymentSystem` are dependent on the `ParkingLot` and `ParkingTicket` to function correctly.
+- **Collaboration**: `EntranceExit` and `ParkingAgent` collaborate with `ParkingLot` and `PaymentSystem` to manage vehicle entry, exit, and payment processes.
+
+### Design Patterns and Their Use
+
+1. **Singleton Pattern**: To ensure there is only one instance of the parking lot and parking managers.
+2. **Observer Pattern**: For the `DisplayBoard` to update automatically when parking spot availability changes.
+3. **Strategy Pattern**: For different payment methods.
+4. **Factory Pattern**: For creating different types of parking spots.
+5. **Thread Safety**: Using locks to manage concurrent access to shared resources
